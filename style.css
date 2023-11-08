@@ -1,0 +1,156 @@
+
+.container {
+    width: 100%;
+    margin: auto;
+    text-align: center;
+    background: #FFF;
+}
+
+.header {
+    width: 96.625%;
+    height: 6.75%;
+    vertical-align: middle;
+    border-radius: 0.313rem;
+    border: 0.25rem solid #FF731A;
+    margin-top: 1.313%;
+    margin-left: 1.625%;
+    display: flex;
+}
+
+.header img {
+    height: 4.313rem;
+    width: 4.313rem;
+    margin-top: 1.5%;
+    margin-left: 1.25%;
+}
+
+.header .linha-vertical {
+    box-sizing: border-box;
+    border-left: 0.25rem solid;
+    border-color: #FF731A;
+    margin-left: 0.938rem;
+}
+
+.header h1 {
+    color: #FF731A;
+    font-family: Montserrat;
+    font-size: 3rem;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    margin-top: 1.813%;
+    margin-left: 9.75%;
+}
+
+h2 {
+    color: #FF731A;
+    font-family: Montserrat;
+    font-size: 2rem;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    margin-top: 2.313%;
+    vertical-align: middle;
+}
+
+.search select {
+    width: 25.813rem;
+    height: 3rem;
+    border-radius: 0.625rem;
+    border-color: #D9D9D9;
+    background: #D9D9D9;
+    text-align: center;
+    color: #000;
+    font-family: Montserrat;
+    font-size: 1.5rem;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+}
+
+.scrollable-container {
+    width: 71.875%;
+    height: 36.625rem;
+    border-radius: 0.625rem;
+    border: 0.125rem solid #FF731A;
+    margin:auto;
+    margin-top: 5.813%;
+    overflow-y: scroll;
+}
+
+/* ---------- barra de rolagem ---------------*/
+
+/* Chrome, Safari, Opera, Edge*/
+.scrollable-container::-webkit-scrollbar {
+    width: 0.438rem;
+  }
+
+.scrollable-container::-webkit-scrollbar-thumb {
+    background: #FF731A;
+    border-radius: 0.313rem;
+  }
+.scrollable-container::-webkit-scrollbar-thumb:hover {
+    background: #8b3f0f;
+  }
+.scrollable-container::-webkit-scrollbar-track:hover {
+    background: #ddd;
+  }
+  
+  /*Firefox Scrollbars*/
+* {
+    scrollbar-width: thin;
+    scrollbar-color: #FF731A #ddd;
+}
+  
+  /*Internet Explorer*/
+html {
+    scrollbar-width: thin;
+    scrollbar-color: #FF731A #ddd;
+}
+html {
+    scrollbar-base-color: #FF731A;
+    scrollbar-arrow-color: #ddd;
+}
+
+/* ---------- barra de rolagem ---------------*/
+  
+.scrollable-container #municipio-list {
+    color: #000;
+    font-family: Montserrat;
+    font-size: 1.8vw;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    text-align: center;
+    display: grid;
+    min-height: 36.625rem;
+    grid-template-columns: 1fr 2fr 1fr;
+    gap: 1px;                                        /*Espaço entre as colunas*/
+    position: relative;                              /* Para posicionar as linhas*/
+}
+
+.scrollable-container #municipio-list::before,
+.scrollable-container #municipio-list::after {
+    content: "";
+    width: 0.125rem;                                 /* Largura da barra vertical */
+    background-color: #FF731A;                     /* Cor da barra vertical */
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    height: 100%;
+}
+
+.scrollable-container #municipio-list::before {
+    left: 25%;
+}
+
+.scrollable-container #municipio-list::after {
+    left: 72%;
+}
+
+footer {
+    font-family: Montserrat;
+    margin-top: 5%;
+    color: #FF731A;
+    text-align: center;
+}
