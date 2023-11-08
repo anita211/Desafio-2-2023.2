@@ -1,5 +1,7 @@
 # Desafio 2 - JavaScript, DOM e Fetch API
 
+Page: https://anita211.github.io/Desafio-2-2023.2/
+
 Este desafio tem como objetivo a implementação de uma tela em HTML e CSS, seguindo um layout desenvolvido para esta atividade. O layout pode ser encontrado neste [link](https://www.figma.com/file/xJGTYOuvNS3iuLr1meqx5u/Entrega-3?type=design&node-id=0%3A1&t=yyDpjMU6RozT27ZG-1) do Figma. Embora a implementação da tela em si não seja difícil, o desafio consiste em fazer com que a tabela exiba todos os municípios da UF selecionada.
 
 Para isso, será necessário utilizar a API do IBGE para buscar os dados dos municípios de um estado. A documentação da API pode ser encontrada neste [link](https://servicodados.ibge.gov.br/api/docs/localidades?versao=1#api-Municipios-estadosUFMunicipiosGet). A ferramenta javascript que faz requisições http para uma api é o [fetch](https://developer.mozilla.org/en-US/docs/Web/API/Fetch_API/Using_Fetch). O endpoint a ser utilizado é o de municípios por UF, que retorna um array de objetos com os dados dos municípios. A partir desses dados, a tabela deverá ser populada com o nome de todos os municípios da UF selecionada.
